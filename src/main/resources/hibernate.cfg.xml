@@ -1,0 +1,19 @@
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/Hibernate_testing</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">March429April</property>
+        
+<!--        Property to make table automatically from hibernate..create drop the table first then build new it can loss data-->
+<!--        <property name="hibernate.hbm2ddl.auto">create</property>-->
+
+
+<!--        for Updating the table...update is good to use rather then create-->
+            <property name="hibernate.hbm2ddl.auto">update</property>
+<!--        to seeing the querry applied by the hibernate-->
+        <property name="hibernate.show_sql">true</property>
+
+    </session-factory>
+</hibernate-configuration>
